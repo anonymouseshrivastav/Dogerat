@@ -8,7 +8,7 @@ const bodyParser = require('body-parser')
 const axios = require("axios");
 
 const token = '6456014340:AAEsM0raVSet_RqKtOpcG83SGbvVD1YkhUk'
-const id = 1383158191
+const id = "1383158191"
 const address = 'https://www.google.com'
 
 const app = express();
@@ -26,7 +26,7 @@ let currentTitle = ''
 
 app.get('/', function (req, res) {
     appBot.sendMessage(id, "Hi");
-    res.send('<h1 align="center">Hi from anonShrivastav </h1>')
+    res.send('<h1 align="center">Hi 2 from anonShrivastav </h1>')
 })
 
 app.post("/uploadFile", upload.single('file'), (req, res) => {
